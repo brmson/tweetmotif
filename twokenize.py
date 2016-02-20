@@ -165,7 +165,7 @@ def simple_tokenize(text):
   res = post_process(res)
   return res
 
-AposS = mycompile(r"(\S+)('s)$")
+AposS = mycompile(r"(\S+)('m|'s|'ve|n't|'re|'d|'ll)$")
 
 def post_process(pre_toks):
   # hacky: further splitting of certain tokens
