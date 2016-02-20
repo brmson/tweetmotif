@@ -24,7 +24,7 @@ def optional(r):
   return '(%s)?' % r
 
 
-PunctChars = r'''['“".?!,:;]'''
+PunctChars = r'''['“".?!,:;`]'''
 Punct = '%s+' % PunctChars
 Entity = '&(amp|lt|gt|quot);'
 
